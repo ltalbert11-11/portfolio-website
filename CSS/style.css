@@ -1,0 +1,84 @@
+body {
+    background-color:#d6d1b0;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    font-style: normal;
+    color:#3b3b3b
+}
+/*colors used: 
+primary color (beige):#f2efe0
+secondary color (olive):#8b8552*/ 
+
+.button {
+    display: inline-block;
+    border-radius: 3px;
+    border-bottom: 2px solid;
+    transition: .2s ease-out;
+    background-color:#badd7f;
+    color:black;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px
+}
+.button:active {
+    background-color: #3e8440;
+}
+.button:hover{
+    background-color: #efaca5;
+}
+
+.button.contact{
+    text-transform: uppercase;
+    border: 2px solid purple;
+    background-color: transparent;
+    color:purple    
+}
+
+.button.contact:hover {
+    background-color: #e2a18a;
+    color: #ffffff
+}
+
+h1,h2,h3,h4 {
+    line-height: 1.4;
+}
+h1 {
+    font: size 2.75em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+    font-display:;
+
+}
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+img{
+    width:100%
+}
+a{
+    color:purple;
+    text-decoration: none;
+}
+a:visited{
+    color:palevioletred;
+}
+a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+a:active{
+    color:green;
+}
+a:focus{
+    color:black;
+}
