@@ -105,6 +105,9 @@ a:focus{
 #Work .row { 
     padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
+#Hero h1, h2 {
+    text-align: center; /* centers text */
+}
 .center{
     text-align: center;
 }
@@ -154,7 +157,7 @@ nav > ul > li> a:focus{
     color:black;
 }
 #Hero {
-    background-color: #ffe4c4;
+    background-color: #d6d1b0;
     padding: 20px;
     display: inline-block;
     width: 100%
@@ -166,8 +169,13 @@ text-align: left;
     text-align:left;
     margin-bottom: 10px;
 }
+.social {
+    display: block;
+    clear: both;
+    text-align: center;
+}
 .Icon {
-    float:right; /* Unsure of how to align under contact buttons */
+    float: left; 
     margin-right: 5px;
 }
 .Copyright {
@@ -188,5 +196,5 @@ Img {
   text-align: center;
 }
 .parent h2 {
-    text-align: center;
+    text-align: center; /*Unsure of how to align "Skills and Tools" to the center. */
 }
