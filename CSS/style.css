@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color:#d6d1b0;
     font-family: "Archivo Narrow", sans-serif;
@@ -33,7 +36,11 @@ secondary color (olive):#8b8552*/
     text-transform: uppercase;
     border: 2px solid purple;
     background-color: transparent;
-    color:purple    
+    color:purple;
+    padding: 10px;
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .button.contact:hover {
@@ -50,7 +57,7 @@ h1 {
 }
 h2 {
     font-size: 2.25em;
-    font-weight: 700;
+    font-weight: 500;
 
 }
 h3 {
@@ -61,7 +68,7 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
-img{
+img {
     width:100%
 }
 a{
@@ -80,4 +87,106 @@ a:active{
 }
 a:focus{
     color:black;
+}
+
+
+/* Layout Styling */
+
+.container {
+    padding: 0 15px;
+}
+.container h1, h2 {
+    text-align: center;
+}
+.row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#Work .row { 
+    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+.center{
+    text-align: center;
+}
+.logo {
+    max-width: 250px;
+}
+header { 
+    background-color:#ffe4c4;
+    text-align: center;
+    width: 100%;
+    height: 160px;
+    padding: 5px 0;
+    position: fixed;
+    border-bottom: 3px solid #4a4a4a;
+}
+main {
+    padding-top: 133px;
+}
+footer {
+    margin-inline: 10px;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a{ 
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a
+}
+nav > ul > li> a:visited{
+    color:palevioletred;
+}
+nav > ul > li> a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+nav > ul > li> a:active{
+    color:green;
+}
+nav > ul > li> a:focus{
+    color:black;
+}
+#Hero {
+    background-color: #ffe4c4;
+    padding: 20px;
+    display: inline-block;
+    width: 100%
+}
+#contact {
+text-align: left;
+}
+#contact h2 {
+    text-align:left;
+    margin-bottom: 10px;
+}
+.Icon {
+    float:right; /* Unsure of how to align under contact buttons */
+    margin-right: 5px;
+}
+.Copyright {
+   text-align: center; /*Unsure of how to align with the bottom of the page */
+}
+Img {
+    border-radius: 27px;
+}
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  text-align: left;
+}
+.parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.parent h2 {
+    text-align: center;
 }
