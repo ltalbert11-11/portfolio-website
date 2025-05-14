@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head> 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=100">
+        <meta name="viewport" content="width=device-width" initial-scale="100">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" typ="text/css" href="css/style.css">
         <link href="style.css" rel="stylesheet">
@@ -14,9 +14,9 @@
         <title>Lexi Talbert Porfolio</title>
     </head>
     <body>
-<header><div> <img src="Img\Logos\Logo.svg" alt="Lexi Talbert" width="10px 20px">
+<header id="myheader"><div class="container"> <img src="Img\Logos\Logo.svg" alt="Lexi Talbert" class="logo">
     <nav>
-     <ul>
+     <ul class="navigation">
         <li><a href="Index.html">Work</a></li>
         <li><a href="about.html">About</a></li> 
         <li><a href="#contact">Contact</a></li>
@@ -25,18 +25,18 @@
         </div>
 </header>
     <main>
-        <div><!--Hero-->
-          <div><!--Container-->
-                <h1>Hi, my name is Lexi Talbert</h1><span><h2>I am a UI designer based in Baltimore, MD.</span></h2>  
+        <div>
+          <div class="container"><!--Container-->
+                <h1>Hi, my name is Lexi Talbert</h1><span><h2>I am a UI designer based in Baltimore, MD.</h2></span>  
             <p></p>
         </div>
         </div>
-    <div><!--Work-->
-        <div><!--Container-->
+    <div id="Work"><!--Work-->
+        <div class="container"><!--Container-->
             <h2>My Work</h2>
-            <div><!--Row-->
+            <div class="row"><!--Row-->
                 <div><!--Column-->
-            <picture>
+            <picture class="images">
                 <source srcset="Img\Botaniq Images 1x\Botaniq Cover 600x.jpg" media="(max-width:767px)">
                 <img src="Img\Botaniq Images 1x\Botaniq Cover 1200x.jpg" alt="My Image"></picture>
         </div>
@@ -46,7 +46,7 @@
         <a href="botaniq.html" class="button">Read More</a>
     </div>
 </div>
-    <div><!--Row-->
+    <div class="row"><!--Row-->
         <div><!--Column-->
                     <picture>
                     <source srcset="Img\MV 1x\MV Cover 600x.jpg" media="(max-width:767px)">
@@ -62,21 +62,22 @@
     </div>
 </main>
 <footer id="contact"> 
-    <div><!--Container-->
+    <div class="container"><!--Container-->
         <h2>Get in Touch</h2>
         <p>Like what you see? Lets work together! </p>
         <div>
             <a href="mailto:lexitalbert91@gmail.com" class="button contact">Email Me</a>
         </div>
-        <a href="tel:4435100695" class="button contact">Call or Text</a>
         <div>
-        <a href="https://www.linkedin.com/in/lexi-talbert-40792a236/" target="_blank">
-            <img src="Img\Logos\iconmonstr-linkedin-3.svg"></a>
-        <a href="https://www.behance.net/lexitalbert" target="_blank">
-            <img src="Img\Logos\iconmonstr-behance-3.svg"></a>
+        <a href="tel:4435100695" class="button contact">Call or Text</a>
+        </div><div>
+        <a class="Icon" href="https://www.linkedin.com/in/lexi-talbert-40792a236/"target="_blank">
+            <img src="Img\Logos\iconmonstr-linkedin-3.svg" width="32px" height="32px"></a>
+        <a class="Icon" href="https://www.behance.net/lexitalbert" target="_blank">
+            <img src="Img\Logos\iconmonstr-behance-3.svg" width="32px" height="32px"></a>
 </div>
 <div>
-    <p>Copyright Lexi Talbert 2025</p>
+    <p class="Copyright">Copyright Lexi Talbert 2025</p>
 </div>
 </div>
 </footer>
