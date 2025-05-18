@@ -18,34 +18,39 @@ secondary color (olive):#8b8552*/
     display: inline-block;
     border-radius: 3px;
     border-bottom: 2px solid;
-    transition: .2s ease-out;
-    background-color:#badd7f;
+    background-color:#efaca5;
     color:black;
     font-size: 16px;
     font-weight: 400;
-    padding: 10px
+    padding: 10px;
+    transition: 0.2s opacity;
+    
+
+    
 }
 .button:active {
     background-color: #3e8440;
 }
 .button:hover{
-    background-color: #efaca5;
+    opacity: 0.8;
 }
 
 .button.contact{
     text-transform: uppercase;
     border: 2px solid purple;
-    background-color: transparent;
+    background-color: #efaca5;
     color:purple;
     padding: 10px;
     float:left;
     margin-right: 10px;
     margin-bottom: 20px;
+    transition: 0.7s opacity;
 }
 
 .button.contact:hover {
-    background-color: #e2a18a;
+    opacity: .8;
     color: #ffffff
+   
 }
 
 h1,h2,h3,h4 {
@@ -98,8 +103,11 @@ a:focus{
 .container h1, h2 {
     text-align: center;
 }
-.row {
+.row:after {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    content: "";
+    clear:both;
+    display: table;
 }
 
 #Work .row { 
@@ -160,7 +168,11 @@ nav > ul > li> a:focus{
     background-color: #d6d1b0;
     padding: 20px;
     display: inline-block;
+    text-align: center;
     width: 100%
+}
+#Hero span {
+    display:block;
 }
 #contact {
 text-align: left;
@@ -198,3 +210,83 @@ Img {
 .parent h2 {
     text-align: center; /*Unsure of how to align "Skills and Tools" to the center. */
 }
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+@media screen and (min-width: 640px) { 
+    header { 
+        text-align: unset;
+        padding: 20px 0 13px;}
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    #about-page h3 {margin-top: 0;}
+}
+@media screen and (min-width: 1024px) {
+    .col-lg-7{
+        width: 60%;
+    }
+    .col-lg-5 {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .container{
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.citypic {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+ @keyframes color-change {
+    from {fill:#ffffff;}
+    to {fill:#edc655;}
+ }
+ .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+ }
+ @keyframes boat-move {
+    to {transform: translate(-380px,5px);}
+ }
+.boat {
+    animation-duration: 15s;
+    animation-name: boat-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+ }
+ @keyframes boat-middle {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(500px, 0px);}
+ }
+ .boat-left {
+    animation:15s boat-middle infinite alternate linear;
+ }
+ @keyframes boat-upper {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-300px, 0px);}
+ }
+ .boat-right {
+    animation:15s boat-upper infinite alternate linear;
+ }
