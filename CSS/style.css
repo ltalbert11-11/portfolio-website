@@ -109,12 +109,11 @@ a:focus{
     clear:both;
     display: table;
 }
-
 #Work .row { 
     padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
 #Hero h1, h2 {
-    text-align: center; /* centers text */
+    text-align: center;
 }
 .center{
     text-align: center;
@@ -125,13 +124,13 @@ a:focus{
 header { 
     background-color:#ffe4c4;
     width: 100%;
-    height: 160px;
-    padding: 5px 0;
+    height: 120px;
+    padding: 10px 0 4px;
     position: fixed;
     border-bottom: 3px solid #4a4a4a;
 }
 main {
-    padding-top: 133px;
+    padding-top: 133px; /* if I change this to 56px my body goes under the header */
 }
 footer {
     margin-inline: 10px;
@@ -139,7 +138,7 @@ footer {
 nav > ul {
     list-style-type: none;
     padding: 0;
-    width: 100%;
+    margin: 0;
 }
 
 nav > ul > li > a{ 
@@ -188,7 +187,7 @@ text-align: left;
     margin-right: 5px;
 }
 .Copyright {
-   text-align: center; /*Unsure of how to align with the bottom of the page */
+   text-align: center; 
 }
 Img {
     border-radius: 27px;
@@ -205,13 +204,37 @@ Img {
   text-align: center;
 }
 .parent h2 {
-    text-align: center; /*Unsure of how to align "Skills and Tools" to the center. */
+    text-align: center; 
 }
 [class*="col-"] {
     float: left;
     padding: 10px;
 }
-@media screen and (min-width: 640px) { 
+.navtoggle li:not(:last-child) {
+        display: none;
+    }
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0,5);
+}
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+@media screen and (min-width: 641px) { 
     header { 
         text-align: unset;
         padding: 20px 0 13px;}
@@ -223,12 +246,21 @@ Img {
     nav > ul > li {
     display: inline-block;
     }
+    .navtoggle li:not(:last-child){
+        display: inline-block;
+    }
+    .navtoggle li:last-child{
+        display: none;
+    }
     .col-md-6 {
         width: 50%;
     }
     #about-page h3 {margin-top: 0;}
     .logo {
         min-width: 240px;
+    }
+    nav > ul  {
+        margin: 1em 0;
     }
 }
 @media screen and (min-width: 1024px) {
