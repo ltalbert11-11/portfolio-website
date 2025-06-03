@@ -19,7 +19,7 @@ secondary color (olive):#8b8552*/
     border-radius: 3px;
     border-bottom: 2px solid;
     background-color:#efaca5;
-    color:black;
+    color:#000000;
     font-size: 16px;
     font-weight: 400;
     padding: 10px;
@@ -191,20 +191,6 @@ text-align: left;
 }
 Img {
     border-radius: 27px;
-}
-.child {
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  text-align: left;
-}
-.parent {
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
-}
-.parent h2 {
-    text-align: center; 
 }
 [class*="col-"] {
     float: left;
