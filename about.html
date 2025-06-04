@@ -10,6 +10,10 @@
     >
     <link rel="stylesheet" href="css/style.css">
     <link href="css/style.css" rel="stylesheet">
+     <script
+      src="https://kit.fontawesome.com/55e4115a17.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,16 +25,26 @@
   </head>
 
   <body id="about-page">
-    <header id="myheader">
+     <header id="myheader">
       <div class="container">
-        <img src="Img/Logos/Logo.svg" alt="Lexi Talbert" class="logo">
-        <nav>
-          <ul class="navigation">
-            <li><a href="Index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <img src="Img/Logos/Logo.svg" alt="Lexi Talbert" class="logo">
+          <nav>
+            <ul class="navigation">
+              <li><a href="Index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
